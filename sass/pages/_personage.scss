@@ -1,6 +1,4 @@
-h1{
-	margin-top: 50px;
-  }
+
 
 
 
@@ -13,7 +11,7 @@ h1{
 	margin-top: 40px;
 	z-index: 50;
 	position: absolute;
-	background-color: rgb(223, 207, 187);
+	background: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg)
 	
 }
 .filtres h3 {
@@ -35,11 +33,11 @@ h1{
 	grid-template-columns: repeat(3, 1fr);
 	gap: 4px;
 	color:#180505;
-    border: 1px solid black;
+    
 	padding: 15px;
 }
 .fiches personnages {
-	border: 1px solid black;
+	border: 3px solid black;
 	padding: 15px;
 }
 

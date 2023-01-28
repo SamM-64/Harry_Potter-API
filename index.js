@@ -3,7 +3,7 @@ let personnage = window.localStorage.getItem("personnage");
 
 if (personnage === null) {
 	// Récupération des pièces depuis l'API
-	const reponse = await fetch("https://hp-api.onrender.com/api/characters");
+	const reponse = await fetch("./personnage.json");
 	console.log(reponse);
 	personnage = await reponse.json();
 	// Transformation des pièces en JSON
@@ -65,7 +65,7 @@ const filterButtons = document.querySelectorAll(".filter-button");
 filterButtons.forEach(function(button) {
 	button.addEventListener("click", function() {
 		// Get the value of the data-filter attribute of the button
-		const filterValue = this.dataset.filter;
+		const filterValue = this.dataset.personnages;
 
 		// Select all of the elements with the class of "house"
 		const houses = document.querySelectorAll(".house");
