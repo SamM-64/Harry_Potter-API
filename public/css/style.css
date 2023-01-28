@@ -119,6 +119,11 @@ video {
   margin-top: 20px;
 }
 
+.fa-user:before {
+  content: "\f007";
+  margin-right: 5px;
+}
+
 .articles {
   margin-top: 400px;
   justify-content: space-around;

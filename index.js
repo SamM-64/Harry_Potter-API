@@ -98,5 +98,5 @@ filterButtons.forEach(function(button) {
 // boutonMettreAJour.addEventListener("click", function () {
 // 	window.localStorage.removeItem("pieces");
 // });
-// await afficherGraphiqueAvis();
+
 
