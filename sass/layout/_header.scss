@@ -1,0 +1,45 @@
+/*** HEADER ***/
+
+.header {
+    height: 37px;
+    background-color:#180505;
+    color: #FFF;
+    /*    border-bottom: solid rgba(255, 255, 255, 0.2) 1px; //se superpose à la div */
+    outline: solid rgba(255, 255, 255, .2) 1px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+	cursor: pointer;
+}
+.header > span {
+    line-height: 37px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: auto;
+}
+.header > ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+	cursor: pointer;
+}
+.header > ul > li {
+    line-height: 37px;
+    width: auto;
+    margin: 0 15px;
+    list-style: none;
+    float: left;
+    font-size: 14px;
+	cursor: pointer;
+}
+.header > ul > li > a {
+    color: #FFF;
+    text-decoration: none;
+	cursor: pointer;
+}
+span > img{
+	width: 30px;
+	float: left;
+	margin-left: 5px;
+}

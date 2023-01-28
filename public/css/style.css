@@ -1,3 +1,252 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open;
+}
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #180505;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*** HEADER ***/
+.header {
+  height: 37px;
+  background-color: #180505;
+  color: #FFF;
+  /*    border-bottom: solid rgba(255, 255, 255, 0.2) 1px; //se superpose à la div */
+  outline: solid rgba(255, 255, 255, 0.2) 1px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.header > span {
+  line-height: 37px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: auto;
+}
+
+.header > ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.header > ul > li {
+  line-height: 37px;
+  width: auto;
+  margin: 0 15px;
+  list-style: none;
+  float: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.header > ul > li > a {
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+span > img {
+  width: 30px;
+  float: left;
+  margin-left: 5px;
+}
+
+footer {
+  margin: 0;
+  padding: 15px;
+  background-color: #180505;
+  margin-top: 10px;
+}
+footer .div-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+footer .logo-footer {
+  height: 200px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  object-fit: cover;
+  width: 1300px;
+  height: 450px;
+  overflow: hidden;
+  opacity: 0.65;
+}
+
+.hp-hero__img-wrapper video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.65;
+  min-width: 700px;
+}
+
+.hp-hero {
+  width: 100vw;
+  height: 18.75rem;
+  background-color: #000;
+  position: relative;
+}
+
+.hp-hero__img-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+}
+
+.articles {
+  margin-top: 400px;
+  justify-content: space-around;
+  background-color: rgb(223, 207, 187);
+  position: relative;
+  padding-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 4px gray;
+}
+
+.gazette {
+  margin-left: 250px;
+  margin-top: 10px;
+  height: 150px;
+}
+
+.article-block {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.article {
+  border: #FFF;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin: 10px;
+}
+
+.baguettes {
+  height: 350px;
+}
+
+h4 {
+  color: antiquewhite;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+.filtres {
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px gray;
+  min-width: 300px;
+  min-height: 400px;
+  margin-top: 40px;
+  z-index: 50;
+  position: absolute;
+  background-color: rgb(223, 207, 187);
+}
+
+.filtres h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #180505;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+/* Fiches */
+.fiches {
+  flex: 1;
+  margin: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  color: #180505;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.fiches personnages {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.fiches img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+}
+
+.fiches p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.fiches h2 {
+  text-align: center;
+}
+
+label {
+  color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blason {
+  width: 150px;
+  margin-left: 320px;
+  margin-top: 40px;
+}
+
+.logo-harry {
+  margin-top: 130px;
+  margin-left: 460px;
+}
+
+.logo-harry2 {
+  height: 200px;
+  margin-left: 450px;
+}
+
+button {
+  color: rgb(214, 206, 114);
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
