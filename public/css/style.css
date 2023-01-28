@@ -181,6 +181,7 @@ h1 {
   text-align: center;
   font-size: 2rem;
   color: #180505;
+  margin-top: 40px;
   padding: 5px;
   text-transform: uppercase;
 }
@@ -228,6 +229,14 @@ a {
   cursor: pointer;
 }
 
+.back {
+  color: rgb(238, 170, 82);
+  font-size: 25px;
+  margin-left: 10px;
+  display: flex;
+  margin-top: 15px;
+}
+
 .blason {
   width: 150px;
   margin-left: 320px;
@@ -245,7 +254,8 @@ a {
 }
 
 button {
-  color: rgb(214, 206, 114);
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
