@@ -6,7 +6,7 @@ let personnage = window.localStorage.getItem("personnage");
 
 if (personnage === null) {
 	// Récupération des pièces depuis l'API
-	const reponse = await fetch("./personnage.json");
+	const reponse = await fetch("https://hp-api.onrender.com/api/characters");
 	console.log(reponse);
 	personnage = await reponse.json();
 	// Transformation des pièces en JSON
