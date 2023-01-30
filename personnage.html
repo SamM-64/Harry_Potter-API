@@ -20,9 +20,20 @@
 	<section class="filtres">
 		<h3>Choose your house</h3>
 		<div class = "filter-button-div">
-			<button class = "filter-button uppercase" data-filter = "gryffondor"><img src="/asset/images/gryffondor.jpg" class="blason" id="gryffondor"></button>
-			<button class = "filter-button uppercase" data-filter = "serpentar"><img src="/asset/images/serpentar.jpg" class="blason" id="serpentar"></button>
+			<button class = "btn-nodesc" data-filter = "gryffondor"><img src="/asset/images/gryffondor.jpg" class="blason" ></button>
+			<button class = "filter-button uppercase" data-filter = "serpentar"><img src="/asset/images/serpentar.jpg" class="blason" ></button>
+			<button class = "filter-button uppercase" data-filter = "serpentar"><img src="/asset/images/blason-poufsouffle.png" class="blason" ></button>
+			<button class = "filter-button uppercase" data-filter = "serpentar"><img src="/asset/images/serdaigle.png" class="blason" ></button>
 		</div>
+		<input
+        type="search"
+        id="search"
+        placeholder="Filter users..."
+        class="appearance-none border border-gray-400 border-b block pl-8 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 rounded-lg text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none"
+      />
+      <div class="my-4 shadow rounded-lg overflow-hidden">
+        <table class="items min-w-full leading-normal"></table>
+      </div>
 		<!-- Fiches personnage -->
 		<section class="fiches"></section>
 		<footer>

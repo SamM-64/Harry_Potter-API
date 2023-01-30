@@ -1,3 +1,6 @@
+/* eslint-disable indent */
+/* eslint-disable no-mixed-spaces-and-tabs */
+/* eslint-disable no-undef */
 
 let personnage = window.localStorage.getItem("personnage");
 
@@ -29,59 +32,65 @@ function genererPersonnage(personnage) {
 		// Création des balises 
 		const imageElement = document.createElement("img");
 		imageElement.src = card.image;
-		const characterElement = document.createElement("h2");
-		characterElement.innerText = card.character;
-		const hogwartsHouseElement = document.createElement("p");
-		hogwartsHouseElement.innerText =`House: ${card.hogwartsHouse}`;
-		hogwartsHouseElement.dataset.id = card.hogwartsHouse;
-		const interpretedByElement = document.createElement("p");
-		interpretedByElement.innerText = `Interpreted By: ${card.interpretedBy}`;
-		const childElement = document.createElement("p");
-		childElement.innerText = `Child: ${card.child}`;
+		const nameElement = document.createElement("h2");
+		nameElement.innerText = card.name;
+		const houseElement = document.createElement("p");
+		houseElement.innerText =`House: ${card.house}`;
+		houseElement.dataset.id = card.house;
+		const dateOfBirthElement = document.createElement("p");
+		dateOfBirthElement.innerText = `date Of Birth: ${card.dateOfBirth}`;
+		const wizardElement = document.createElement("p");
+		wizardElement.innerText = `Wizard: ${card.wizard}`;
+		const ancestryElement = document.createElement("p");
+		ancestryElement.innerText =`Ancestry: ${card.ancestry}`;
 		const patronusElement = document.createElement("p");
 		patronusElement.innerText =`Patronus: ${card.patronus}`;
+		const hogwartsStudentElement = document.createElement("p");
+		hogwartsStudentElement.innerText =`hogwarts Student: ${card.hogwartsStudent}`;
 		
 		
 		// On rattache la balise article a la section Fiches
 		sectionFiches.appendChild(personnageElement);
 		personnageElement.appendChild(imageElement);
-		personnageElement.appendChild(characterElement);
-		personnageElement.appendChild(hogwartsHouseElement);
-		personnageElement.appendChild(interpretedByElement);
-		personnageElement.appendChild(childElement);
+		personnageElement.appendChild(nameElement);
+		personnageElement.appendChild(houseElement);
+		personnageElement.appendChild(dateOfBirthElement);
+		personnageElement.appendChild(wizardElement);
+		personnageElement.appendChild(ancestryElement);
 		personnageElement.appendChild(patronusElement);
+		personnageElement.appendChild(hogwartsStudentElement);
 	}
 
 }
 
 genererPersonnage(personnage);
 
+const boutonNoDescription = document.querySelector(".btn-nodesc");
 
-// Bouton filtre
-// Select all of the filter buttons
-const filterButtons = document.querySelectorAll(".filter-button");
-
-// Add a click event listener to each button
-filterButtons.forEach(function(button) {
-	button.addEventListener("click", function() {
-		// Get the value of the data-filter attribute of the button
-		const filterValue = this.dataset.personnages;
-
-		// Select all of the elements with the class of "house"
-		const houses = document.querySelectorAll(".house");
-
-		// Loop through each of the elements
-		houses.forEach(function(hogwartsHouse) {
-			// If the element has the class of the filter value, show it
-			if (hogwartsHouse.classList.contains(filterValue)) {
-				hogwartsHouse.style.display = "block";
-			} else {
-				// Otherwise, hide it
-				hogwartsHouse.style.display = "none";
-			}
-		});
+boutonNoDescription.addEventListener("click", function () {
+	const piecesFiltrees = personnage.filter(function (personnage) {
+		return personnage.hogwartsHouse;
 	});
+	document.querySelector(".fiches").innerHTML = "";
+	genererPersonnage(piecesFiltrees);
 });
+
+
+
+document.addEventListener("DOMContentLoaded", fetchImages);
+
+searchUser.addEventListener("input", e => {
+	const element = e.target.value.toLowerCase();
+	const newUser = users.filter(user =>
+	  // eslint-disable-next-line no-mixed-spaces-and-tabs
+	  user.login.toLowerCase().includes(element)
+	);
+  
+	showUsers(newUser);
+  // eslint-disable-next-line indent
+  });
+
+	
 
 
 
@@ -98,5 +107,7 @@ filterButtons.forEach(function(button) {
 // boutonMettreAJour.addEventListener("click", function () {
 // 	window.localStorage.removeItem("pieces");
 // });
+
+
 
 
