@@ -1,0 +1,312 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #180505;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+/*** HEADER ***/
+.header {
+  height: 37px;
+  background-color: #180505;
+  color: #FFF;
+  /*    border-bottom: solid rgba(255, 255, 255, 0.2) 1px; //se superpose à la div */
+  outline: solid rgba(255, 255, 255, 0.2) 1px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.header > span {
+  line-height: 37px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: auto;
+}
+
+.header > ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.header > ul > li {
+  line-height: 37px;
+  width: auto;
+  margin: 0 15px;
+  list-style: none;
+  float: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.header > ul > li > a {
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+span > img {
+  width: 30px;
+  float: left;
+  margin-left: 5px;
+}
+
+footer {
+  margin: 0;
+  padding: 15px;
+  background-color: #180505;
+  margin-top: 10px;
+}
+footer .div-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+footer .logo-footer {
+  height: 150px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  object-fit: cover;
+  width: 1300px;
+  height: 450px;
+  overflow: hidden;
+  opacity: 0.65;
+}
+
+.hp-hero__img-wrapper video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.65;
+  min-width: 700px;
+}
+
+.hp-hero {
+  width: 100vw;
+  height: 18.75rem;
+  background-color: #000;
+  position: relative;
+}
+
+.hp-hero__img-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+}
+
+.fa-user:before {
+  content: "\f007";
+  margin-right: 5px;
+}
+
+.articles {
+  margin-top: 400px;
+  justify-content: space-around;
+  background: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg);
+  position: relative;
+  padding-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 4px gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.article2 {
+  display: block;
+}
+
+.gazette {
+  margin-left: 250px;
+  margin-top: 30px;
+  height: 150px;
+}
+
+:root {
+  --color1: rgb(20, 24, 22);
+  --color2: rgb(66, 5, 3);
+  --back: ;
+}
+
+.book {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  touch-action: none;
+  border-radius: 5%/3.5%;
+  box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2), -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+.book:hover {
+  box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+.test {
+  height: 300px;
+  margin-right: 80px;
+}
+
+.article-block {
+  justify-content: space-around;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.article {
+  border: #FFF;
+  margin-top: 20px;
+  margin: 10px;
+  display: flex;
+}
+.article .article-bis {
+  border: 3px solid black;
+  width: 600px;
+  height: 570px;
+}
+.article .article-daily {
+  margin-left: 20px;
+}
+.article .article3 {
+  margin-left: 40px;
+}
+.article img {
+  margin: 5px;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-left: 1050px;
+}
+
+h4 {
+  color: antiquewhite;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  white-space: pre-line;
+}
+
+.filtres {
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px gray;
+  min-width: 300px;
+  min-height: 400px;
+  margin-top: 40px;
+  z-index: 50;
+  background: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg);
+}
+
+.filtres h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #180505;
+  padding: 30px;
+  text-transform: uppercase;
+}
+
+/* Fiches */
+.fiches {
+  flex: 1;
+  margin: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  color: #180505;
+  padding: 15px;
+}
+
+.fiches personnages {
+  border: 3px solid black;
+  padding: 15px;
+}
+
+.fiches img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+}
+
+.fiches p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.fiches h2 {
+  text-align: center;
+}
+
+label {
+  color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.back {
+  color: rgb(238, 170, 82);
+  font-size: 25px;
+  margin-left: 10px;
+  display: flex;
+  margin-top: 15px;
+}
+
+.filter-button-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blason {
+  width: 150px;
+  margin-top: 40px;
+}
+
+.logo-harry {
+  margin-top: 130px;
+  margin-left: 460px;
+}
+
+.logo-harry2 {
+  height: 200px;
+  margin-left: 450px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
