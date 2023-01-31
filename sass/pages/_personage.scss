@@ -92,8 +92,29 @@ label{
 	
 }
 
-button{
-	background: none;
+
+
+.form {
+    margin-top: 35px;
+	display: flex;
+    justify-content: center;
+}
+
+.form select {
+    padding: 7px;
+    outline: none;
     border: none;
-  cursor: pointer;
+    background: #180505;
+    color: rgb(238, 170, 82);
+    border-radius: 4px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.form select option {
+    transition: all .5s ease;
+}
+
+.form select option:hover {
+    background: #000;
 }
