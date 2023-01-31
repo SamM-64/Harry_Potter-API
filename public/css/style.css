@@ -325,6 +325,82 @@ aside > div > div {
   animation: fadeOut 3000ms infinite linear 1950ms;
 }
 
+#ui .track.track_6 .foot.right {
+  animation: fadeOut 3000ms infinite linear 1950ms;
+}
+
+#ui .track.track_7 {
+  transform: rotateZ(-9deg);
+}
+
+#ui .track.track_7 .foot.left {
+  animation: fadeOut 3000ms infinite linear 2100ms;
+}
+
+#ui .track.track_7 .foot.right {
+  animation: fadeOut 3000ms infinite linear 2250ms;
+}
+
+#ui .track.track_8 {
+  transform: rotateZ(28deg);
+}
+
+#ui .track.track_8 .foot.left {
+  animation: fadeOut 3000ms infinite linear 2400ms;
+}
+
+#ui .track.track_8 .foot.right {
+  animation: fadeOut 3000ms infinite linear 2550ms;
+}
+
+#ui .track.track_9 {
+  transform: rotateZ(-12deg);
+}
+
+#ui .track.track_9 .foot.left {
+  animation: fadeOut 3000ms infinite linear 2700ms;
+}
+
+#ui .track.track_9 .foot.right {
+  animation: fadeOut 3000ms infinite linear 2850ms;
+}
+
+#ui .track.track_10 {
+  transform: rotateZ(18deg);
+}
+
+#ui .track.track_10 .foot.left {
+  animation: fadeOut 3000ms infinite linear 3000ms;
+}
+
+#ui .track.track_10 .foot.right {
+  animation: fadeOut 3000ms infinite linear 3150ms;
+}
+
+#ui .track.track_11 {
+  transform: rotateZ(70deg);
+}
+
+#ui .track.track_11 .foot.left {
+  animation: fadeOut 3000ms infinite linear 3300ms;
+}
+
+#ui .track.track_11 .foot.right {
+  animation: fadeOut 3000ms infinite linear 3450ms;
+}
+
+#ui .track.track_12 {
+  transform: rotateZ(40deg);
+}
+
+#ui .track.track_12 .foot.left {
+  animation: fadeOut 3000ms infinite linear 3600ms;
+}
+
+#ui .track.track_12 .foot.right {
+  animation: fadeOut 3000ms infinite linear 3750ms;
+}
+
 #ui .track .foot {
   position: absolute;
   width: 14px;
