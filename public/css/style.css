@@ -20,7 +20,7 @@ main {
 .header {
   height: 37px;
   background-color: #180505;
-  color: #FFF;
+  color: rgb(238, 170, 82);
   /*    border-bottom: solid rgba(255, 255, 255, 0.2) 1px; //se superpose à la div */
   outline: solid rgba(255, 255, 255, 0.2) 1px;
   font-size: 14px;
@@ -55,7 +55,7 @@ main {
 }
 
 .header > ul > li > a {
-  color: #FFF;
+  color: rgb(238, 170, 82);
   text-decoration: none;
   cursor: pointer;
 }
@@ -124,9 +124,16 @@ video {
   margin-right: 5px;
 }
 
+.logo-harry {
+  margin-top: 90px;
+  height: 250px;
+  display: flex;
+  margin-left: 410px;
+}
+
 .articles {
   margin-top: 400px;
-  justify-content: space-around;
+  height: 500px;
   background: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg);
   position: relative;
   padding-bottom: 30px;
@@ -136,77 +143,238 @@ video {
   flex-direction: column;
 }
 
-.article2 {
-  display: block;
-}
-
-.gazette {
-  margin-left: 250px;
-  margin-top: 30px;
-  height: 150px;
-}
-
-:root {
-  --color1: rgb(20, 24, 22);
-  --color2: rgb(66, 5, 3);
-  --back: ;
-}
-
-.book {
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  margin: 20px;
-  overflow: hidden;
-  z-index: 10;
-  touch-action: none;
-  border-radius: 5%/3.5%;
-  box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2), -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
-}
-
-.book:hover {
-  box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
-}
-
-.test {
-  height: 300px;
-  margin-right: 80px;
-}
-
 .article-block {
-  justify-content: space-around;
   margin-top: 70px;
   margin-bottom: 50px;
 }
 
-.article {
-  border: #FFF;
-  margin-top: 20px;
-  margin: 10px;
-  display: flex;
-}
-.article .article-bis {
-  border: 3px solid black;
-  width: 600px;
-  height: 570px;
-}
-.article .article-daily {
-  margin-left: 20px;
-}
-.article .article3 {
-  margin-left: 40px;
-}
-.article img {
-  margin: 5px;
-}
-
 h1 {
-  margin-top: 50px;
-  margin-left: 1050px;
+  font: 50px/1 "Playfair Display SC";
+  text-align: center;
+  color: #180505;
+  margin-top: 30px;
+}
+@media (min-width: 700px) {
+  h1 {
+    font: 70px/1 "Playfair Display SC";
+  }
 }
 
+aside {
+  text-align: center;
+  padding: 3px 0;
+  border: solid var(--black);
+  border-width: 2px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1.5rem 0;
+}
+@media (min-width: 700px) {
+  aside {
+    margin: 0;
+  }
+}
+aside > div {
+  display: flex;
+  align-items: center;
+  border: solid var(--black);
+  border-width: 1px 0;
+}
+aside > div > div {
+  flex: 1;
+  padding: 8px;
+}
+
+.sidebar {
+  margin-top: 3rem;
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .sidebar h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .sidebar > a {
+    flex: 0 1 48%;
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+  .sidebar .slack-ui {
+    border-top: 0;
+  }
+  .sidebar .pie {
+    order: 3;
+  }
+}
+@media (min-width: 1024px) {
+  .sidebar {
+    display: block;
+    border-left: 1px solid;
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+}
+
+#ui {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* text */
+#ui p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  font-size: 18px;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  font-family: "IM Fell English", "Lucida Handwriting", cursive;
+  color: #180505;
+  margin-top: 30px;
+}
+
+/* track */
+#ui .track {
+  position: absolute;
+  left: 50px;
+  width: 50px;
+  height: 8px;
+  border-radius: 999px;
+  transform-origin: 0 50%;
+  transition: 2000ms;
+}
+
+/* tracks positioning and timing */
+#ui .track.track_1 {
+  transform: rotateZ(-14deg);
+}
+
+#ui .track.track_1 .foot.left {
+  animation: fadeOut 3000ms infinite linear 300ms;
+}
+
+#ui .track.track_1 .foot.right {
+  animation: fadeOut 3000ms infinite linear 450ms;
+}
+
+#ui .track.track_2 {
+  transform: rotateZ(89deg);
+}
+
+#ui .track.track_2 .foot.left {
+  animation: fadeOut 3000ms infinite linear 600ms;
+}
+
+#ui .track.track_2 .foot.right {
+  animation: fadeOut 3000ms infinite linear 750ms;
+}
+
+#ui .track.track_3 {
+  transform: rotateZ(41deg);
+}
+
+#ui .track.track_3 .foot.left {
+  animation: fadeOut 3000ms infinite linear 900ms;
+}
+
+#ui .track.track_3 .foot.right {
+  animation: fadeOut 3000ms infinite linear 1050ms;
+}
+
+#ui .track.track_4 {
+  transform: rotateZ(53deg);
+}
+
+#ui .track.track_4 .foot.left {
+  animation: fadeOut 3000ms infinite linear 1200ms;
+}
+
+#ui .track.track_4 .foot.right {
+  animation: fadeOut 3000ms infinite linear 1350ms;
+}
+
+#ui .track.track_5 {
+  transform: rotateZ(-15deg);
+}
+
+#ui .track.track_5 .foot.left {
+  animation: fadeOut 3000ms infinite linear 1500ms;
+}
+
+#ui .track.track_5 .foot.right {
+  animation: fadeOut 3000ms infinite linear 1650ms;
+}
+
+#ui .track.track_6 {
+  transform: rotateZ(69deg);
+}
+
+#ui .track.track_6 .foot.left {
+  animation: fadeOut 3000ms infinite linear 1800ms;
+}
+
+#ui .track.track_6 .foot.right {
+  animation: fadeOut 3000ms infinite linear 1950ms;
+}
+
+#ui .track .foot {
+  position: absolute;
+  width: 14px;
+  height: 9px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+#ui .track .foot_claw {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  background: #000;
+  border-radius: 100px 0px;
+}
+
+#ui .track .foot_claw:nth-child(2) {
+  top: 0px;
+  left: -9px;
+}
+
+#ui .track .foot.left {
+  top: -7px;
+}
+
+#ui .track .foot.right {
+  top: 7px;
+  left: 25px;
+}
+
+#ui.switch .track {
+  background: rgba(0, 0, 0, 0);
+}
+
+#ui.switch p::after {
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
 h4 {
-  color: antiquewhite;
+  color: rgb(238, 170, 82);
 }
 
 p {
@@ -291,11 +459,6 @@ a {
 .blason {
   width: 150px;
   margin-top: 40px;
-}
-
-.logo-harry {
-  margin-top: 130px;
-  margin-left: 460px;
 }
 
 .logo-harry2 {

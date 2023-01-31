@@ -3,7 +3,7 @@
 .header {
     height: 37px;
     background-color:#180505;
-    color: #FFF;
+    color: rgb(238, 170, 82);
     /*    border-bottom: solid rgba(255, 255, 255, 0.2) 1px; //se superpose à la div */
     outline: solid rgba(255, 255, 255, .2) 1px;
     font-size: 14px;
@@ -17,6 +17,7 @@
     display: block;
     text-align: center;
     width: auto;
+   
 }
 .header > ul {
     position: absolute;
@@ -34,7 +35,7 @@
 	cursor: pointer;
 }
 .header > ul > li > a {
-    color: #FFF;
+    color: rgb(238, 170, 82);;
     text-decoration: none;
 	cursor: pointer;
 }

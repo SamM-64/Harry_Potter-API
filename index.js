@@ -1,3 +1,4 @@
+/* eslint-disable no-empty */
 /* eslint-disable no-mixed-spaces-and-tabs */
 // /* eslint-disable indent */
 // /* eslint-disable no-mixed-spaces-and-tabs */
@@ -105,32 +106,43 @@ function showAll() {
 				  
 				  const name = document.createElement("p");
 				  name.textContent = el.name;
+
+				  const dateOfBirth = document.createElement("p");
+				  dateOfBirth.textContent = `Date Of Birth: ${el.dateOfBirth}`;
+
+				  const wizard = document.createElement("p");
+				  wizard.textContent = `Wizard: ${el.wizard}`;
+
+				  const patronus = document.createElement("p");
+				  patronus.textContent = `Patronus: ${el.patronus}`;
 				  
 				  const house = document.createElement("p");
 				  house.textContent = el.house;
+				  // eslint-disable-next-line no-empty
 				  if(el.house == "Gryffindor") {
-					  house.style.color = "red";
+					  
 				  }
 				  else if(el.house == "Slytherin") {
-					  house.style.color = "green";
+					 
 				  }
 				  else if(el.house == "Hufflepuff") {
-					  house.style.color = "orange";
+					 
 				  }
 				  else if(el.house == "Ravenclaw") {
-					  house.style.color = "lightgreen";
+					
 				  }
 				  
 				  const img = document.createElement("img");
 				  img.setAttribute("src", el.image);
-				  const dateOfBirth = document.createElement("p");
-				  dateOfBirth.setAttribute("src", el.dateOfBirth);
+				 
   
 				  grid.appendChild(card);
 				  card.appendChild(img);
 				  card.appendChild(name);
 				  card.appendChild(house);
 				  card.appendChild(dateOfBirth);
+				  card.appendChild(wizard);
+				  card.appendChild(patronus);
 			  });
 		  })
 		  .catch((e) => console.log(e));
@@ -255,6 +267,16 @@ select.addEventListener("change", () => {
 });
   
 showAll();
+
+
+/* interval timer */
+const
+	timer = 10000,
+	ui = document.getElementById("ui");
+
+setInterval(function() {
+	ui.classList.toggle("switch");
+}, timer);
 
 
 
