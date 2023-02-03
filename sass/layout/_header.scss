@@ -44,3 +44,17 @@ span > img{
 	float: left;
 	margin-left: 5px;
 }
+
+/* Add a responsive stylesheet for small screens */
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header span {
+        margin: auto;
+    }
+    .header ul {
+        display: none;
+    }
+}

@@ -66,11 +66,23 @@ span > img {
   margin-left: 5px;
 }
 
+/* Add a responsive stylesheet for small screens */
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header span {
+    margin: auto;
+  }
+  .header ul {
+    display: none;
+  }
+}
 footer {
   margin: 0;
   padding: 15px;
   background-color: #180505;
-  margin-top: 10px;
 }
 footer .div-footer {
   align-items: center;
@@ -79,10 +91,10 @@ footer .div-footer {
   padding-bottom: 15px;
 }
 footer .logo-footer {
-  height: 150px;
+  height: 120px;
   object-fit: cover;
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 
 video {
@@ -459,6 +471,23 @@ p {
   white-space: pre-line;
 }
 
+@media (min-width: 600px) {
+  .hp-hero__img-wrapper video {
+    top: 20%;
+    height: 650px;
+  }
+  .articles {
+    margin-top: 550px;
+    height: 900px;
+  }
+  .logo-harry {
+    margin-left: 300px;
+    margin-top: 150px;
+  }
+  .div-footer {
+    padding-top: 20px;
+  }
+}
 .filtres {
   border-radius: 4px;
   box-shadow: 0px 0px 4px gray;
@@ -565,6 +594,12 @@ a {
 
 .form select option:hover {
   background: #000;
+}
+
+@media (min-width: 600px) {
+  .logo-harry2 {
+    margin-left: 350px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

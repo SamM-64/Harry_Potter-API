@@ -326,6 +326,26 @@ p{
 	font-weight: bold;
 	white-space: pre-line;
   }
+
+  @media (min-width: 600px) {
+	.hp-hero__img-wrapper video{
+		top:20%;
+		height: 650px;
+	}
+	.articles{
+		margin-top: 550px;
+		height: 900px;
+	}
+	.logo-harry{
+		margin-left: 300px;
+		margin-top: 150px;
+	}
+	.div-footer{
+		padding-top: 20px;
+	}
+}
+
+ 
   
 
 
