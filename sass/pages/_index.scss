@@ -327,13 +327,13 @@ p{
 	white-space: pre-line;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) and (max-width: 1024px){
 	.hp-hero__img-wrapper video{
 		top:20%;
 		height: 650px;
 	}
 	.articles{
-		margin-top: 550px;
+		margin-top: 580px;
 		height: 900px;
 	}
 	.logo-harry{
@@ -342,6 +342,13 @@ p{
 	}
 	.div-footer{
 		padding-top: 20px;
+	}
+
+	.header > span{
+		font-size: 20px;
+	}
+	.header > ul > li > a{
+		font-size: 20px;
 	}
 }
 
