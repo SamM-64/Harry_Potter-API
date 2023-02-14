@@ -11,7 +11,7 @@ video{
   }
   .hp-hero__img-wrapper video {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     opacity: .65;
@@ -62,8 +62,7 @@ p{
 
   @media (min-width: 700px) and (max-width: 1024px){
 	.hp-hero__img-wrapper video{
-		top:20%;
-		height: 650px;
+	display: none;
 	}
 	.logo-harry{
 		margin-left: 300px;

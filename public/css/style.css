@@ -23,7 +23,6 @@ main {
   color: rgb(238, 170, 82);
   /*    border-bottom: solid rgba(255, 255, 255, 0.2) 1px; //se superpose à la div */
   outline: solid rgba(255, 255, 255, 0.2) 1px;
-  font-size: 14px;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
@@ -93,7 +92,7 @@ video {
 
 .hp-hero__img-wrapper video {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.65;
@@ -140,8 +139,7 @@ p {
 
 @media (min-width: 700px) and (max-width: 1024px) {
   .hp-hero__img-wrapper video {
-    top: 20%;
-    height: 650px;
+    display: none;
   }
   .logo-harry {
     margin-left: 300px;
@@ -254,13 +252,6 @@ a {
 @media (min-width: 700px) and (max-width: 1024px) {
   .logo-harry2 {
     margin-left: 350px;
-  }
-  p {
-    font-size: 10px;
-  }
-  .form select {
-    height: 50px;
-    width: 250px;
   }
 }
 
