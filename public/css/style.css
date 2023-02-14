@@ -135,7 +135,6 @@ h4 {
 
 p {
   text-align: center;
-  font-weight: bold;
   white-space: pre-line;
 }
 
@@ -255,6 +254,9 @@ a {
 @media (min-width: 700px) and (max-width: 1024px) {
   .logo-harry2 {
     margin-left: 350px;
+  }
+  p {
+    font-size: 15px;
   }
 }
 
