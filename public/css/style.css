@@ -151,10 +151,10 @@ p {
     padding-top: 20px;
   }
   .header > span {
-    font-size: 20px;
+    font-size: 30px;
   }
   .header > ul > li > a {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 .filtres {
@@ -256,7 +256,11 @@ a {
     margin-left: 350px;
   }
   p {
-    font-size: 15px;
+    font-size: 10px;
+  }
+  .form select {
+    height: 50px;
+    width: 250px;
   }
 }
 
