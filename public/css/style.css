@@ -74,12 +74,16 @@ footer .div-footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
+  color: rgb(238, 170, 82);
 }
 footer .logo-footer {
   height: 120px;
   object-fit: cover;
   margin: 0;
   padding: 5px;
+}
+footer h4 {
+  font-weight: normal;
 }
 
 video {
@@ -126,10 +130,6 @@ video {
   height: 250px;
   display: flex;
   margin-left: 410px;
-}
-
-h4 {
-  color: rgb(238, 170, 82);
 }
 
 p {
